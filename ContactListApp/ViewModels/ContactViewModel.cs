@@ -43,7 +43,7 @@ public partial class ContactViewModel : ObservableObject
 
         Contacts.Add(contact);
         ClearFields();
-        await Shell.Current.GoToAsync("//ContactsPage");
+        await Shell.Current.GoToAsync("ContactsPage");
     }
 
     [RelayCommand]
@@ -56,7 +56,7 @@ public partial class ContactViewModel : ObservableObject
     [RelayCommand]
     async Task GoToAddContact()
     {
-        await Shell.Current.GoToAsync("//MainPage");
+        await Shell.Current.GoToAsync("MainPage");
     }
 
     [RelayCommand]
@@ -75,7 +75,7 @@ public partial class ContactViewModel : ObservableObject
     async Task SaveChanges()
     {
         IsEditing = false;
-        await Shell.Current.GoToAsync("..");
+        await Shell.Current.GoToAsync("ContactDetailsPage");
     }
 
     private void ClearFields()

@@ -7,6 +7,11 @@ namespace ContactListApp
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("MainPage", typeof(MainPage));
+            Routing.RegisterRoute("ContactsPage", typeof(ContactsPage));
+            Routing.RegisterRoute("ContactDetailsPage", typeof(ContactDetailsPage));
         }
+
     }
+    
 }
