@@ -3,6 +3,8 @@ using CommunityToolkit.Mvvm.Input;
 using ContactListApp.Models;
 using System.Collections.ObjectModel;
 
+using ContactListApp.Views;
+
 namespace ContactListApp.ViewModels;
 
 public partial class ContactViewModel : ObservableObject
